@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Battle 28-dec-2023</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #32295a;
+      }
+      .wrapper {
+        display: flex;
+        gap: 20px;
+      }
+      .wrapper .inner {
+        width: 80px;
+        height: 80px;
+        /* background: #B0ACD5; */
+        display: flex;
+      }
+      .one {
+        width: 0;
+        height: 0;
+        border-top: 80px solid #b0acd5;
+        border-right: 50px solid transparent;
+      }
+      .three,
+      .four {
+        width: 80px;
+        height: 80px;
+        background: #b0acd5;
+      }
+      .five {
+        width: 50px;
+        height: 50px;
+      }
+      .six {
+        width: 0;
+        height: 0;
+        border-bottom: 80px solid #b0acd5;
+        border-left: 50px solid transparent;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="main">
+      <div class="wrapper">
+        <div class="inner">
+          <div class="one"></div>
+          <div class="two"></div>
+        </div>
+        <div class="inner">
+          <div class="three"></div>
+        </div>
+      </div>
+      <div class="wrapper">
+        <div class="inner">
+          <div class="four"></div>
+        </div>
+        <div class="inner">
+          <div class="five"></div>
+          <div class="six"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
