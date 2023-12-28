@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spinning Wheel</title>
+    <style>
+      body {
+        background-color: #000;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        color: #fff;
+      }
+      .container {
+        width: 50%;
+        height: auto;
+        margin: 0 auto;
+      }
+      .wheel {
+        width: 200px;
+        height: 200px;
+        position: relative;
+        border-radius: 50%;
+        background-color: none;
+        margin: 10vh auto;
+        border-left: 10px solid gold;
+        border-top: 10px solid orangered;
+        border-right: 10px solid cyan;
+        border-bottom: 10px solid deeppink;
+        animation: 5s spin infinite linear;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .innerWheel {
+        background-color: green;
+        border-left: 10px solid deeppink;
+        border-top: 10px solid cyan;
+        border-right: 10px solid orangered;
+        border-bottom: 10px solid gold;
+        box-sizing: border-box;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        animation: 3s spin2 infinite linear;
+      }
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+      @keyframes spin2 {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wheel">
+      <div class="innerWheel"></div>
+    </div>
+  </body>
+</html>
