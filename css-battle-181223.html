@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Battle - 18-dec-2023</title>
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 90vh;
+        max-height: 100%;
+      }
+      .wrapper {
+        display: flex;
+        background: #371948;
+        margin: 0;
+        padding: 0;
+        height: 300px;
+        width: 400px;
+      }
+      .wrapper div {
+        width: 85px;
+        height: 150px;
+      }
+      .fst {
+        border-right: 30px solid #b0acd5;
+      }
+      .sec,
+      .thrd {
+        border-top: 30px solid #b0acd5;
+        align-self: center;
+        border-right: 30px solid #b0acd5;
+        width: 70px;
+      }
+      .thrd {
+        align-self: end;
+        height: 120px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="fst"></div>
+      <div class="sec"></div>
+      <div class="thrd"></div>
+    </div>
+  </body>
+</html>
