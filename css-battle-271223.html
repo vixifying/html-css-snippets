@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Battle 28-dec-2023</title>
+
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f2644d;
+        flex-direction: column;
+        min-height: 94.5svh;
+      }
+      .wrapper {
+        width: 170px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      .one {
+        background: #fff;
+        padding: 15px;
+        width: 100%;
+      }
+      .two {
+        background-color: #6da7ff;
+        padding: 5px 0;
+        /* margin:0 20px; */
+        width: 180px;
+      }
+      .three {
+        height: 80px;
+        background-color: white;
+        width: 180px;
+        position: relative;
+      }
+      .four {
+        background-color: #6da7ff;
+        /* margin-right:20px; */
+        width: 30px;
+        height: 55px;
+        position: absolute;
+        right: 20px;
+      }
+      .five {
+        height: 35px;
+        width: 30px;
+      }
+      .six {
+        display: flex;
+      }
+      .left {
+        width: 0;
+        height: 0;
+        border-bottom: 20px solid #fff;
+        border-left: 15px solid transparent;
+      }
+      .right {
+        width: 0;
+        height: 0;
+        border-bottom: 20px solid #fff;
+        border-right: 15px solid transparent;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="one"></div>
+      <div class="two"></div>
+      <div class="three">
+        <div class="four">
+          <div class="five"></div>
+          <div class="six">
+            <div class="left"></div>
+            <div class="right"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
